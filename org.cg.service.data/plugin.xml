@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.cg.dao.webcontainer.WebApp">
+      <webapp
+            context="/data"
+            docBase="/WebContents"
+            initLevel="50">
+         <param
+               name="com.paysimple.service.data.param1"
+               value="com.paysimple.service.data.param1">
+         </param>
+      </webapp>
+   </extension>
+   <extension
+         point="org.cg.dao.core.service">
+      <service
+            class="org.cg.service.data.DataAppService"
+            initLevel="5">
+      </service>
+   </extension>
+
+</plugin>

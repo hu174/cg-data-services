@@ -1,0 +1,105 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:cxf="http://cxf.apache.org/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://cxf.apache.org/jaxrs 
+http://cxf.apache.org/schemas/jaxrs.xsd 
+http://cxf.apache.org/jaxws 
+http://cxf.apache.org/schemas/jaxws.xsd 
+http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<import resource="classpath*:META-INF/cxf/cxf.xml" />
+	<import resource="classpath*:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath*:META-INF/cxf/cxf-servlet.xml" />
+	<import resource="classpath*:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
+	<bean id='jacksonProvider' class='org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider' />
+
+	<cxf:bus>
+		<cxf:properties>
+			<entry key="org.apache.cxf.jaxrs.bus.providers" value-ref="busProviders" />
+		</cxf:properties>
+	</cxf:bus>
+
+	<util:list id="busProviders">
+		<ref bean="webExceptionMapper" />
+		<ref bean="ioExceptionMapper" />
+	</util:list>
+
+
+	<bean id="webExceptionMapper" class="org.kiji.rest.GeneralExceptionMapper" />
+	<bean id="ioExceptionMapper" class="org.kiji.rest.IOExceptionMapper" />
+	<bean id="kijiManager" class="com.paysimple.service.data.PsKijiRESTManager"
+		factory-method="getInstance" />
+	<bean id="kijiClient" class="org.kiji.rest.KijiClient"
+		factory-bean="kijiManager" factory-method="getKijiClient" />
+	<bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"
+		factory-bean="kijiManager" factory-method="getObjectMapper" />
+	<bean id="properties" class="java.util.Properties" factory-bean="kijiManager"
+		factory-method="getProperties" />
+	<bean id="QueryManager" class="com.puck.rest.QueryManager">
+		<constructor-arg index="0" ref="kijiClient" />
+		<constructor-arg index="1" ref="properties" />
+	</bean>
+
+	<bean id="scanResource" class="com.paysimple.resources.RangeScanRowsResource">
+		<constructor-arg index="0" ref="kijiClient" />
+	</bean>
+	<bean id="statusResource" class="com.puck.resources.SearchStatusResource">
+		<constructor-arg index="0" ref="QueryManager" />
+	</bean>
+	
+	<jaxrs:server address="/" id="DataServices">
+		<jaxrs:serviceBeans>
+			<bean class="com.paysimple.app.core.service.CoreService" />
+			<bean class="org.kiji.rest.resources.KijiRESTResource" />
+			<bean class="org.kiji.rest.resources.InstancesResource">
+				<constructor-arg index="0" ref="kijiClient"></constructor-arg>
+			</bean>
+			<bean class="org.kiji.rest.resources.InstanceResource">
+				<constructor-arg index="0" ref="kijiClient" />
+			</bean>
+			<bean class="org.kiji.rest.resources.TableResource">
+				<constructor-arg index="0" ref="kijiClient" />
+			</bean>
+			<bean class="org.kiji.rest.resources.TablesResource">
+				<constructor-arg index="0" ref="kijiClient" />
+			</bean>
+			<bean class="org.kiji.rest.resources.RowsResource">
+				<constructor-arg index="0" ref="kijiClient" />
+				<constructor-arg index="1" ref="objectMapper" />
+			</bean>
+			<bean class="org.kiji.rest.resources.RowResource">
+				<constructor-arg index="0" ref="kijiClient" />
+			</bean>
+			<bean class="org.kiji.rest.resources.EntityIdResource">
+				<constructor-arg index="0" ref="kijiClient" />
+			</bean>
+			<ref bean="scanResource" />
+			<bean class="com.puck.resources.SearchQueryResource">
+				<constructor-arg index="0" ref="QueryManager" />
+				<constructor-arg index="1" ref="kijiClient" />
+			</bean>
+			<ref bean="statusResource" />
+			<bean class="com.puck.resources.RawDataPageResource">
+				<constructor-arg index="0" ref="QueryManager" />
+				<constructor-arg index="1" ref="kijiClient" />
+				<property name="scanResource" ref="scanResource" />
+			</bean>
+
+		</jaxrs:serviceBeans>
+		<jaxrs:extensionMappings>
+			<entry key="xml" value="application/xml" />
+			<entry key="json" value="application/json" />
+		</jaxrs:extensionMappings>
+		<jaxrs:providers>
+			<ref bean='jacksonProvider' />
+		</jaxrs:providers>
+	</jaxrs:server>
+	<!-- <jaxrs:server id="bmiservice" address="/"> <jaxrs:serviceBeans> <ref 
+		bean="notification" /> </jaxrs:serviceBeans> </jaxrs:server> -->
+
+
+</beans>

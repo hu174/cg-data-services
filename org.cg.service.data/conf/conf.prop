@@ -1,0 +1,9 @@
+cluster=kiji://10.0.1.161/
+instances=default
+corePoolSize=10
+maximumPoolSize=20
+keepAliveTime=60
+queueSize=20
+table=resultTuple
+tableLayout=layout.json
+instance=default

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="target/lib/asm-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/avro-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/avro-ipc-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/avro-mapred-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cglib-nodep-2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-cli-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-codec-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-configuration-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-digester-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-el-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-io-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-lang-2.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-lang3-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-math-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-net-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/core-3.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/easymock-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/fake-hbase-0.0.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/ftplet-api-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/ftpserver-core-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/ftpserver-deprecated-1.0.0-M2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/gson-2.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/guava-11.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-annotations-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-auth-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-client-2.0.0-mr1-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-common-2.0.0-cdh4.3.0-tests.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-common-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-configurator-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-core-2.0.0-mr1-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-hdfs-2.0.0-cdh4.3.0-tests.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-hdfs-2.0.0-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-minicluster-2.0.0-mr1-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hadoop-test-2.0.0-mr1-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hamcrest-core-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hbase-0.94.6-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/high-scale-lib-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/hsqldb-1.8.0.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/httpclient-4.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/httpcore-4.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-core-asl-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-jaxrs-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-mapper-asl-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-xc-1.8.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jamon-runtime-2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jansi-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jasper-compiler-5.5.23.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jasper-runtime-5.5.23.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jaxb-api-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jaxb-impl-2.2.3-1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jersey-core-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jersey-json-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jersey-server-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jets3t-0.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jettison-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-6.1.26.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-util-6.1.26.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jline-0.9.94.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jline-2.9.0-1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jruby-complete-1.6.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jsch-0.1.42.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jsr305-1.3.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kfs-0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/libthrift-0.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/log4j-1.2.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/metrics-core-2.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/mina-core-2.0.0-M5.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/mockito-all-1.8.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/mrunit-0.9.0-incubating-hadoop2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/netty-3.4.0.Final.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/objenesis-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/paranamer-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/protobuf-java-2.4.0a.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/scala-library-2.9.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/slf4j-log4j12-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/snappy-java-1.0.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/stax-api-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/velocity-1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/xmlenc-0.52.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/zookeeper-3.4.5-cdh4.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-avro-1.1.2-cdh4.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-cdh4-platform-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-checkin-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-common-flags-1.0.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-delegation-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-mapreduce-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-mapreduce-cdh4mr1-bridge-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-mapreduce-hadoop1-bridge-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-mapreduce-platform-api-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-rest-0.4.0-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-1.2.0-tests.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-cdh41mr1-bridge-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-cdh42mr1-bridge-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-hadoop1-hbase92-bridge-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-hadoop1-hbase94-bridge-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-platform-api-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/kiji-schema-shell-1.2.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

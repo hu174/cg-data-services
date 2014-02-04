@@ -1,0 +1,42 @@
+{
+  name : "resultTuple",
+  description : "A collection of final query result",
+  "keys_format" : {
+    "org.kiji.schema.avro.RowKeyFormat2" : {
+      "encoding" : "FORMATTED",
+      "salt" : {
+        "suppress_key_materialization" : false
+      },
+      "components" : [ {
+        "name" : "key",
+        "type" : "STRING"
+      },
+      {
+        "name" : "timestamp",
+        "type" : "LONG"
+      } ]
+    }
+  },
+  locality_groups : [ {
+    name : "default",
+    description : "Main locality group",
+    in_memory : false,
+    max_versions : 10,
+    ttl_seconds : 2147483647,
+    compression_type : "SNAPPY",
+    families : [ {
+      name : "result",
+      description : "query result",
+      columns : [ {
+        name : "queryResult",
+        description : "query result",
+        column_schema : {
+          storage : "UID",
+          type : "INLINE",
+          value : "string"
+        }
+      }]
+    }]
+  } ],
+  version : "layout-1.1"
+}

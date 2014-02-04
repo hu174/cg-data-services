@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-jdbc-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-jms-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-tx-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-web-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-xc-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-core-asl-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-jaxrs-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jackson-mapper-asl-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-server-8.1.7.v20120910.jar"/>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-bundle-jaxrs-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/geronimo-servlet_3.0_spec-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-continuation-8.1.7.v20120910.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-http-8.1.7.v20120910.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-io-8.1.7.v20120910.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-security-8.1.7.v20120910.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jetty-util-8.1.7.v20120910.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/slf4j-api-1.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/aopalliance-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/asm-3.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-api-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-bindings-soap-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-bindings-xml-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-core-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-databinding-jaxb-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-frontend-jaxrs-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-frontend-jaxws-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-frontend-simple-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-transports-http-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-ws-addr-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/cxf-rt-ws-policy-2.7.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/javax.ws.rs-api-2.0-m10.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/jaxb-impl-2.1.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/neethi-3.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-aop-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-beans-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-context-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-core-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/spring-expression-3.2.2.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/stax2-api-3.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/woodstox-core-asl-4.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/wsdl4j-1.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/xml-resolver-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="target/lib/xmlschema-core-2.0.3.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
